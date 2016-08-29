@@ -13,6 +13,7 @@ public class EmptyNode<T> extends Node<T> {
         return 0;
     }
 
+    // Como es un nodo vacio, se retorna un nodo lleno con el dato item
     public final Node<T> add(T item) {
         return new DataNode<T>(item);
     }

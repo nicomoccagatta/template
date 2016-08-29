@@ -16,6 +16,7 @@ public class DataNode<T> extends Node<T> {
         return 1 + nextNode.sizeQueueToTheLast();
     }
 
+    // Como es un nodo lleno, el dato se agrega en el nodo siguiente
     public final Node<T> add(T item) {
         nextNode = nextNode.add(item);
         return this;
