@@ -5,28 +5,28 @@ package ar.fiuba.tdd.tp0p94914;
  */
 public class Cola<T> implements Queue<T> {
     public Cola() {
-        primerNodo = new EmptyNode<T>();
+        firstNode = new EmptyNode<T>();
     }
 
     public final boolean isEmpty() {
-        return primerNodo.isEmpty();
+        return firstNode.isEmpty();
     }
 
     public final int size() {
-        return primerNodo.sizeQueueToTheLast();
+        return firstNode.sizeQueueToTheLast();
     }
 
     public final void add(T item) {
-        primerNodo = primerNodo.add(item);
+        firstNode = firstNode.add(item);
     }
 
     public final T top() {
-        return primerNodo.getObject();
+        return firstNode.getObject();
     }
 
     public final void remove() {
-        primerNodo = primerNodo.getNextObject();
+        firstNode = firstNode.getNextObject();
     }
 
-    private Node<T> primerNodo;
+    private Node<T> firstNode;
 }
