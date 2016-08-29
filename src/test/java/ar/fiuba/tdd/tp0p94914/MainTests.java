@@ -26,7 +26,9 @@ public class MainTests {
         cola.add(1);
         assertEquals(cola.size(),1);
 
-        cola.add(2); cola.add(3); cola.add(4);
+        cola.add(2);
+        cola.add(3);
+        cola.add(4);
         assertEquals(cola.size(),4);
 
         cola.remove();
