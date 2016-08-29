@@ -1,4 +1,4 @@
-package ar.fiuba.tdd.tp0_94914;
+package ar.fiuba.tdd.tp0p94914;
 
 /**
  * Created by Nicolas on 28/08/2016.
@@ -8,7 +8,7 @@ public class DataNode<T> extends Node<T> {
         this.data = item;
     }
 
-    public final boolean isEmpty(){
+    public final boolean isEmpty() {
         return false;
     }
 
